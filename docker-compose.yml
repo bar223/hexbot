@@ -1,0 +1,7 @@
+services:
+  hexbot:
+    build: .
+    container_name: hexbot
+    restart: unless-stopped
+    env_file:
+      - .env
